@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='angularPractice'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./angular.min.js"></script>
+    <script src="./app.js"></script>
+    <title>Will you master Angular?</title>
+</head>
+<body>
+    <div ng-controller='controllerPractice'>
+        <h2>{{sayHello()}}</h2>
+        <p>Ich heiße {{name}} und ich werde Angular herrschen, was auch immer nötig ist!</p> 
+        <input type="text" ng-model="name">
+    </div> 
+</body>
+</html>
