@@ -2,13 +2,16 @@
 'use strict';
 
 angular.module("LunchChecker", [])
-.controller("LunchCheckerController", function ($scope) 
+.controller("LunchCheckerController", LchkController)
+
+LchkController.$inject = ['$scope'];
+function LchkController($scope) 
 {
     $scope.msg = "";
     $scope.dishlist = "";
     $scope.checkLunch = function ()
     {   $scope.msg = checkLunchList($scope.dishlist); };
-})
+}
 
 function checkLunchList(listToCheck)
 {
